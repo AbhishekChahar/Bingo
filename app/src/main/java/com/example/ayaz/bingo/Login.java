@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,6 +38,7 @@ public class Login extends AppCompatActivity {
         if(mAuth.getCurrentUser()!=null)
         {
             startActivity(new Intent(this,MainActivity.class));
+            
             finish();
         }
 
